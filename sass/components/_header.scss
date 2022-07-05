@@ -1,0 +1,41 @@
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.contact {
+  display: flex;
+  @include placing(center, null);
+  margin-left: auto;
+}
+
+.contact__item {
+  @include placing(center, center);
+  background-size: contain;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact__mail,
+.contact__tel {
+  display: flex;
+  @include placing(center, null);
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include font(14px, 500, 1.14, 0.02em);
+  color: var(--text-color);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--akcent-color);
+  }
+}
+
+.contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

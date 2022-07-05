@@ -1,0 +1,50 @@
+.footer__subs {
+  margin-left: auto;
+}
+
+.footer-subs__title {
+  margin-bottom: 20px;
+
+  @include font(null, 700, 1.14, null);
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.footer-subs__form {
+  display: flex;
+}
+
+.footer-subs__btn {
+  display: flex;
+  padding: 10px 28px;
+  position: relative;
+  margin-left: 12px;
+
+  width: 200px;
+  height: 50px;
+
+  @include font(16px, 700, 1.88, 0.06em);
+
+  color: var(--second-color);
+  background: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}
+
+.footer-subs__icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  margin-left: 10px;
+
+  transform: translateY(-50%);
+}

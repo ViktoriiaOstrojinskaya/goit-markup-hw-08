@@ -1,0 +1,22 @@
+@import './base/normalize';
+@import './utils/variables';
+@import './base/reset';
+@import './utils/mixins';
+
+@import './layuot/container';
+@import './layuot/logo';
+@import './layuot/navigation';
+@import './layuot/button';
+@import './layuot/subs-form';
+@import './layuot/modal';
+
+@import './components/header';
+@import './components/hero';
+@import './components/advantage';
+@import './components/about';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/subs';
+@import './components/holder';
+@import './components/gallery';

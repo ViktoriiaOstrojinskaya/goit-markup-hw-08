@@ -1,0 +1,51 @@
+  .nav {
+    display: flex;
+    @include placing(center, null);
+  }
+  .menu {
+    display: flex;
+    margin-left: 93px;
+  }
+  
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .menu__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    position: relative;
+  
+    @include font(14px, 500, 1.14, 0.02em);
+    color: var(--main-color);
+  
+    transition: color 250ms var(--timing-function);
+  
+    &:hover,
+    &:focus {
+      color: var(--akcent-color);
+    }
+  }
+  
+  .menu__link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  
+    display: block;
+    width: 100%;
+    height: 4px;
+  
+    background: var(--akcent-color);
+    border-radius: 2px;
+  }
+
+  .current {
+    color: var(--akcent-color);
+  }
+  
+
+  

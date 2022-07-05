@@ -1,0 +1,24 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--main-bkg);
+  color: var(--text-color);
+}
+
+:root {
+  --main-bkg: #ffffff;
+  --main-color: #212121;
+  --second-color: #ffffff;
+  --text-color: #757575;
+  --akcent-color: #2196f3;
+  --footer-color: rgba(255, 255, 255, 0.6);
+  --btn-color: #ffffff;
+  --main-title-color: #ffffff;
+  --title-color: #212121;
+  --btn-bkg: #f5f4fa;
+  --typical-padding: 94px;
+  --icon-bgc: #ffffff;
+  --icon-fill: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
