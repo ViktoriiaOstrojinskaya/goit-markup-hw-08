@@ -1,12 +1,11 @@
 .advantage {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
 
   @media screen and (min-widht: 1200px) {
-    margin-top: 94px;
-    margin-bottom: 94px;
-    
+    padding-top: 94px;
+    padding-bottom: 94px; 
   }
 }
 
