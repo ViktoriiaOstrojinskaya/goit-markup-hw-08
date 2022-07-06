@@ -3,20 +3,20 @@
 @import './base/reset';
 @import './utils/mixins';
 
-@import './layuot/container';
-@import './layuot/logo';
-@import './layuot/navigation';
-@import './layuot/button';
-@import './layuot/subs-form';
-@import './layuot/modal';
+@import './components/container';
+@import './components/logo';
+@import './components/navigation';
+@import './components/button';
+@import './components/subs-form';
+@import './components/modal';
 
-@import './components/header';
-@import './components/hero';
-@import './components/advantage';
-@import './components/about';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
-@import './components/subs';
-@import './components/holder';
-@import './components/gallery';
+@import './layuot/header';
+@import './layuot/hero';
+@import './layuot/advantage';
+@import './layuot/about';
+@import './layuot/team';
+@import './layuot/clients';
+@import './layuot/footer';
+@import './layuot/subs';
+@import './layuot/holder';
+@import './layuot/gallery';
