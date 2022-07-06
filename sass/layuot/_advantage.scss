@@ -51,9 +51,8 @@
 .advantage__subtitle {
   margin-bottom: 10px;
   text-align: center;
-  
-  @media screen and (min-widht: 768px) {
-    text-align: none;
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
 
   @include font(14px, 700, 1.14, null);

@@ -653,9 +653,9 @@ img {
   text-transform: uppercase;
   color: var(--main-color);
 }
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
   .advantage__subtitle {
-    text-align: none;
+    text-align: left;
   }
 }
 
