@@ -590,13 +590,18 @@ img {
 
 .hero__title {
   margin-bottom: 30px;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .advantage {
@@ -882,15 +887,16 @@ img {
   fill: currentColor;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-widht: 1200px) {
+  .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .footer__address {
@@ -1016,10 +1022,14 @@ img {
 }
 
 .holder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-widht: 1200px) {
+  .holder {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .holder__item:not(:last-child) {

@@ -1,7 +1,16 @@
 .holder {
-  display: flex;
-  @include placing(center, center);
-  margin-bottom: 50px;
+  // display: flex;
+  // @include placing(center, center);
+  // margin-bottom: 50px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+
+  @media screen and (min-widht: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px; 
+  }
 }
 
 .holder__item:not(:last-child) {

@@ -15,9 +15,17 @@
 .hero__title {
   margin-bottom: 30px;
 
-  @include font(44px, 900, 1.36, 0.06em);
+  @include font(26px, 900, 1.36, 0.06em);
+
+  @media screen and (min-width: 1200px) {
+  font-size: 44px;
+  }
+
   text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
+
+  
+  
 }
 

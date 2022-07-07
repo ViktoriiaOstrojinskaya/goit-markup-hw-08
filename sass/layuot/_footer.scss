@@ -1,12 +1,18 @@
 .footer .container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 }
 
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+
+  @media screen and (min-widht: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px; 
+  }
 }
 
 .footer__address {
