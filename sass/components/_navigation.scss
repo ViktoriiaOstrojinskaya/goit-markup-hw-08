@@ -1,5 +1,5 @@
   .nav {
-    display: flex;
+    display: none;
     @include placing(center, null);
   }
   .menu {

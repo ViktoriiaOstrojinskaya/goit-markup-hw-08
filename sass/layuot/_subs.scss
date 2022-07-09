@@ -1,4 +1,5 @@
 .footer__subs {
+  
   margin-left: auto;
 }
 
@@ -10,15 +11,16 @@
   color: var(--second-color);
 }
 
-.footer-subs__form {
-  display: flex;
-}
+// .footer-subs__form {
+//   display: flex;
+// }
 
 .footer-subs__btn {
   display: flex;
   padding: 10px 28px;
   position: relative;
-  margin-left: 12px;
+  // margin-left: 12px;
+  margin: 0 auto;
 
   width: 200px;
   height: 50px;

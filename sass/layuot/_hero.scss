@@ -1,31 +1,81 @@
+.hero .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+
+
 .hero {
-  padding: 200px 0;
+  // padding: 200px 0;
+
+  padding: 181px 0;
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bg.jpg);
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-}
+  background-color: #2f303a;
 
-.hero__title {
-  margin-bottom: 30px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bg-480.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bg-480@2x.jpg);
+    }
 
-  @include font(26px, 900, 1.36, 0.06em);
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bg-768.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bg-768@2x.jpg);
+    }  
+    }
 
-  @media screen and (min-width: 1200px) {
-  font-size: 44px;
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bg-1200.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bg-1200@2x.jpg);
+    }
+    }
   }
 
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--main-title-color);
 
-  
-  
+
+.hero__title {
+margin-bottom: 30px;
+
+@include font(26px, 900, 1.36, 0.06em);
+
+@media screen and (min-width: 1200px) {
+font-size: 44px;
 }
 
+text-align: center;
+text-transform: uppercase;
+color: var(--main-title-color);
+}
