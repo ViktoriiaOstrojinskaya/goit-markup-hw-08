@@ -19,8 +19,10 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  width: 450px;
+  height: 609px;
   background: var(--btn-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -147,13 +149,16 @@
 
 .modal__checkbox {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .check-text {
-  @include font(14px, null, 1.7, null);
+  @include font(12px, null, 1.7, null);
   color: var(--text-color);
 
-  display: flex;
+  // display: flex;
   @include placing(center, null);
 }
 

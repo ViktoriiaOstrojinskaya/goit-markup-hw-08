@@ -15,18 +15,19 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
-      <div class="container nav">
+    <header class="header">
+      <div class="container">
+        
         <a href="./index.html" class="logo link"
           ><span class="logo__text--start">Web</span><span class="logo__text--end">Studio</span></a
         >
         <nav class="nav">
           <ul class="menu list">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link link">Студия</a>
+              <a href="./index.html" class="menu__link link current">Студия</a>
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link current">Портфолио</a>
+              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
             </li>
             <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
           </ul>
@@ -47,16 +48,82 @@
               >+38 096 111 11 11
             </a>
           </li>
-        </ul>
+        </ul> 
+
+        <button type="button" class="mob-menu__open-btn" >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-btn-open"></use>
+          </svg>
+        </button>
+       </div>
+
+
+       
+
+      
+        <div class="mob-menu is-hidden">
+          <div class="container">
+        
+         <div class="mob-menu__top">  
+        <button type="button" class="mob-menu__close-btn" >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-btn-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mob-menu__list list">
+          <li class="mob-menu__item">
+            <a href="./index.html" class="mob-menu__link link">Студия</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+          </li>
+          <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+        </ul> 
+         </div> 
+
+         <div class="mob-menu__bottom">
+
+        <ul class="mob-menu__contact-list list">
+          <li class="mob-menu__contact-item">
+            <a href="tel:+380961111111" 
+            class="mob-menu__contact-tel link">+38 096 111 11 11</a>
+          </li>
+          <li class="mob-menu__contact-item">
+            <a href="mailto:info@devstudio.com" 
+            class="mob-menu__contact-mail link">info@devstudio.com</a>
+          </li>
+        </ul>  
+         
+        <ul class="mob-menu__soc-list list">
+            <li class="mob-menu__soc-item">
+              <a href="" class="mob-menu__soc-link link">Instagram</a>
+            </li>
+            <li class="mob-menu__soc-item">
+              <a href="" class="mob-menu__soc-link link">Twitter</a>
+            </li>
+            <li class="mob-menu__soc-item">
+              <a href="" class="mob-menu__soc-link link">Facebook</a>
+            </li>
+            <li class="mob-menu__soc-item">
+              <a href="" class="mob-menu__soc-link link">LinkedIn</a>
+            </li>
+        </ul>  
+        </div>
+        
+        
+       </div>
       </div>
-    </header> -->
+
+
+    </header>
 
     <!-- Portfolio -->
     <main class="portfolio">
       <section class="holder section">
         <div class="container">
           <h1 class="advantage-title visually-hidden">Страница Портфолио</h1>
-          <ul class="holder list">
+          <ul class="holder__list list">
             <li class="holder__item"><button type="button" class="holder__btn">Все</button></li>
             <li class="holder__item">
               <button type="button" class="holder__btn">Веб-сайты</button>
@@ -69,11 +136,37 @@
               <button type="button" class="holder__btn">Маркетинг</button>
             </li>
           </ul>
+
+
           <ul class="gallery list">
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img src="./images/img-portfolio-1.jpg" alt="Ноутбук" width="370" height="294" />
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-1-1200.jpg 1x,
+                    ./images/gallery-1-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-1-768.jpg 1x,
+                    ./images/gallery-1-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-1-480.jpg 1x,
+                    ./images/gallery-1-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-1-480.jpg" 
+                  alt="Ноутбук" 
+                  width="450" 
+                  />
+                  </picture>
+                  
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -90,12 +183,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img
-                    src="./images/img-portfolio-2.jpg"
-                    alt="Два баскетболиста"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-2-1200.jpg 1x,
+                    ./images/gallery-2-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                   />
+                  <source
+                    srcset="
+                    ./images/gallery-2-768.jpg 1x,
+                    ./images/gallery-2-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-2-480.jpg 1x,
+                    ./images/gallery-2-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-2-480.jpg" 
+                  alt="Два баскетболиста"
+                  width="450" 
+                  />
+                  </picture>
+                  
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -112,12 +224,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img
-                    src="./images/img-portfolio-3.jpg"
-                    alt="Вывеска ресторана"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-3-1200.jpg 1x,
+                    ./images/gallery-3-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                   />
+                  <source
+                    srcset="
+                    ./images/gallery-3-768.jpg 1x,
+                    ./images/gallery-3-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-3-480.jpg 1x,
+                    ./images/gallery-3-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-3-480.jpg" 
+                  alt="Вывеска ресторана"
+                  width="450" 
+                  />
+                  </picture>
+                  
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -134,7 +265,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img src="./images/img-portfolio-4.jpg" alt="Наушники" width="370" height="294" />
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-4-1200.jpg 1x,
+                    ./images/gallery-4-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-4-768.jpg 1x,
+                    ./images/gallery-4-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-4-480.jpg 1x,
+                    ./images/gallery-4-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-4-480.jpg" 
+                  alt="Наушники"
+                  width="450" 
+                  />
+                  </picture>
+                  
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -151,12 +306,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img
-                    src="./images/img-portfolio-5.jpg"
-                    alt="Две картонные коробки"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-5-1200.jpg 1x,
+                    ./images/gallery-5-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                   />
+                  <source
+                    srcset="
+                    ./images/gallery-5-768.jpg 1x,
+                    ./images/gallery-5-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-5-480.jpg 1x,
+                    ./images/gallery-5-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-5-480.jpg" 
+                  alt="Две картонные коробки"
+                  width="450" 
+                  />
+                  </picture>
+                  
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -173,12 +347,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img
-                    src="./images/img-portfolio-6.jpg"
-                    alt="Компбютерный монитор"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-6-1200.jpg 1x,
+                    ./images/gallery-6-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                   />
+                  <source
+                    srcset="
+                    ./images/gallery-6-768.jpg 1x,
+                    ./images/gallery-6-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-6-480.jpg 1x,
+                    ./images/gallery-6-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-6-480.jpg" 
+                  alt="Компьютерный монитор"
+                  width="450" 
+                  />
+                  </picture>
+                  
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -195,7 +388,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img src="./images/img-portfolio-7.jpg" alt="Журнал" width="370" height="294" />
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-7-1200.jpg 1x,
+                    ./images/gallery-7-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-7-768.jpg 1x,
+                    ./images/gallery-7-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-7-480.jpg 1x,
+                    ./images/gallery-7-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-7-480.jpg" 
+                  alt="Журнал"
+                  width="450" 
+                  />
+                  </picture>
+
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -212,7 +429,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img src="./images/img-portfolio-8.jpg" alt="Табличка" width="370" height="294" />
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-8-1200.jpg 1x,
+                    ./images/gallery-8-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-8-768.jpg 1x,
+                    ./images/gallery-8-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-8-480.jpg 1x,
+                    ./images/gallery-8-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-8-480.jpg" 
+                  alt="Табличка"
+                  width="450" 
+                  />
+                  </picture>
+
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -229,12 +470,31 @@
             <li class="gallery__item">
               <a class="gallery__item--active link" href="">
                 <div class="gallery__wrap">
-                  <img
-                    src="./images/img-portfolio-9.jpg"
-                    alt="Ноутбук с клавиатурой"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery-9-1200.jpg 1x,
+                    ./images/gallery-9-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                   />
+                  <source
+                    srcset="
+                    ./images/gallery-9-768.jpg 1x,
+                    ./images/gallery-9-768@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/gallery-9-480.jpg 1x,
+                    ./images/gallery-9-480@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  />
+                  <img src="./images/gallery-9-480.jpg" 
+                  alt="Ноутбук с клавиатурой"
+                  width="450" 
+                  />
+                  </picture>
+                
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения  о
@@ -253,7 +513,7 @@
     </main>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__contact">
           <a href="./index.html" class="footer__logo link"
@@ -333,7 +593,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <script src="./js/menu.js"></script>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

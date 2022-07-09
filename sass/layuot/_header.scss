@@ -41,6 +41,7 @@
 }
 
 .header .container {
+  height: 60px;
   display: flex;
   @include placing(center, center);
 }

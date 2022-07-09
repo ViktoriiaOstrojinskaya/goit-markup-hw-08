@@ -13,9 +13,21 @@
   }
 }
 
-.holder__item:not(:last-child) {
-  margin-right: 8px;
+.holder__list {
+  display: flex;
+  flex-wrap: wrap;
+  // @include placing(center, center);
+  margin-bottom: 50px;
+  column-gap: 8px;
+  row-gap: 15px;
+  
 }
+
+
+
+// .holder__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .holder__btn {
   border: 0px;
