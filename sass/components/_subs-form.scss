@@ -19,4 +19,14 @@
       border-color: var(--akcent-color);
       color: var(--text-color);
     }
+
+    @media screen and (min-widht: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-widht: 768px) {
+      width: 358px;
+    }
+
+
   }

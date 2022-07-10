@@ -6,6 +6,10 @@
   display: none;
   @include placing(center, null);
   margin-left: auto;
+
+  @media screen and (min-widht: 768px) {
+    display: flex;
+  } 
 }
 
 .contact__item {
@@ -49,7 +53,6 @@
 .mob-menu {
   position: fixed;
   background-color: #FFFFFF;
-  // z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;

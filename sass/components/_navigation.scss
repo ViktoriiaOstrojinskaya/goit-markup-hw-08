@@ -1,7 +1,14 @@
   .nav {
     display: none;
+    @media screen and (min-widht: 768px) {
+      display: flex;
+    }
     @include placing(center, null);
+
+    
   }
+
+
   .menu {
     display: flex;
     margin-left: 93px;

@@ -6,11 +6,8 @@
 
 
 .hero {
-  // padding: 200px 0;
-
   padding: 181px 0;
   max-width: 1600px;
-  // height: 600px;
   height: 400px;
   margin: 0 auto;
   
@@ -24,6 +21,7 @@
       rgba(47, 48, 58, 0.4), 
       rgba(47, 48, 58, 0.4)),
     url(/images/hero-bg-480.jpg);
+    
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -34,6 +32,7 @@
     }
 
     @media screen and (min-width: 768px) {
+      
       background-image: linear-gradient(
       rgba(47, 48, 58, 0.4), 
       rgba(47, 48, 58, 0.4)),
@@ -49,6 +48,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+      height: 600px;
       padding: 200px 0;
       background-image: linear-gradient(
       rgba(47, 48, 58, 0.4), 
@@ -71,12 +71,11 @@
 margin-bottom: 30px;
 
 @include font(26px, 900, 1.36, 0.06em);
+text-align: center;
+text-transform: uppercase;
+color: var(--main-title-color);
 
 @media screen and (min-width: 1200px) {
 font-size: 44px;
 }
-
-text-align: center;
-text-transform: uppercase;
-color: var(--main-title-color);
 }
