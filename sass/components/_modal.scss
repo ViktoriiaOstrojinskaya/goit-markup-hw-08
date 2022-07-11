@@ -149,7 +149,7 @@
 
 .modal__checkbox {
   margin-bottom: 30px;
-  display: flex;
+  
   align-items: center;
   justify-content: center;
 }
@@ -157,6 +157,7 @@
 .check-text {
   @include font(12px, null, 1.7, null);
   color: var(--text-color);
+ 
 
   // display: flex;
   @include placing(center, null);
@@ -167,6 +168,8 @@
 }
 
 .check-text span {
+  display: flex;
+  flex-wrap: wrap;
   width: 16px;
   height: 15px;
   border: 1px solid rgba(0, 0, 0, 1);
