@@ -14,19 +14,25 @@
   //   margin-bottom: 30px;
   // }
 
-  width: 100%;
+  width: 450px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 2);
+    width: 354px;
+    
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 60px) / 3);
+    width: 370px;
   }
 }
 
 .gallery__item--active {
-  display: block;
+  // display: block;
 
+  display: flex;
+    flex-direction: column;
+    height: 100%;
+
+  
   transition: box-shadow 250ms var(--timing-function);
 
   &:hover,
@@ -64,6 +70,7 @@
 }
 
 .gallery__inner {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

@@ -6,7 +6,7 @@
 
 
 .hero {
-  padding: 181px 0;
+  padding: 118px 0;
   max-width: 1600px;
   height: 400px;
   margin: 0 auto;
@@ -70,12 +70,12 @@
 .hero__title {
 margin-bottom: 30px;
 
-@include font(26px, 900, 1.36, 0.06em);
+@include font(26px, 900, 1.61, 0.06em);
 text-align: center;
 text-transform: uppercase;
 color: var(--main-title-color);
 
 @media screen and (min-width: 1200px) {
-font-size: 44px;
+  @include font(44px, 900, 1.36, 0.06em)
 }
 }

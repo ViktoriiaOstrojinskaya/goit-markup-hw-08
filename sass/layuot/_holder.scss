@@ -7,7 +7,7 @@
   padding-bottom: 60px;
 
 
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px; 
   }
@@ -17,9 +17,16 @@
   display: flex;
   flex-wrap: wrap;
   // @include placing(center, center);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   column-gap: 8px;
   row-gap: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  
+    @include placing(center, center);
+  }
+
   
 }
 
