@@ -19,10 +19,8 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  // width: 528px;
-  // height: 581px;
-  width: 450px;
-  height: 609px;
+  width: auto;
+  height: auto;
   background: var(--btn-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -30,8 +28,19 @@
   border-radius: 4px;
 
   padding: 40px;
+  overflow: auto;
 
   transition: transform 250ms var(--timing-function);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close-btn {
@@ -156,15 +165,16 @@
   flex-wrap: wrap;
   @include font(12px, null, 1.17, null);
   color: var(--text-color);
- 
-
-  // display: flex;
   @include placing(center, null);
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, null, 1.7, null);
+  } 
 }
 
 .check-text a {
   color: var(--akcent-color);
-}
+}  
 
 .check-text span {
  
@@ -178,6 +188,10 @@
   @include placing(center, center);
 
   transition: border-color 250ms var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+  }
 }
 
 .check-icon {

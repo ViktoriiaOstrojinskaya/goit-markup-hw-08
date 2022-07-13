@@ -2,6 +2,12 @@
 .footer__logo {
   font-family: 'Raleway';
   @include font(24px, 700, 1.17, 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 700, 1.19, 0.03em);
+    font-weight: 700;
+  }
+
 }
 
 .logo__text {

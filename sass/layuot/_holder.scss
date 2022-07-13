@@ -1,40 +1,30 @@
 .holder {
-  // display: flex;
-  // @include placing(center, center);
-  // margin-bottom: 50px;
-
   padding-top: 60px;
   padding-bottom: 60px;
-
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px; 
-  }
+  } 
 }
 
 .holder__list {
   display: flex;
   flex-wrap: wrap;
-  // @include placing(center, center);
   margin-bottom: 40px;
   column-gap: 8px;
   row-gap: 15px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
-  
     @include placing(center, center);
   }
 
-  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    @include placing(center, center);
+  }  
 }
-
-
-
-// .holder__item:not(:last-child) {
-//   margin-right: 8px;
-// }
 
 .holder__btn {
   border: 0px;

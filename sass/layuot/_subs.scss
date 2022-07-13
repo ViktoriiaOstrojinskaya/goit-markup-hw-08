@@ -1,7 +1,8 @@
-// .footer__subs {
-  
-//   // margin-left: auto;
-// }
+.footer__subs {
+  @media screen and (min-width: 1200px) {
+  margin-left: auto;
+  }
+}
 
 .footer-subs__title {
   margin-bottom: 20px;
@@ -11,16 +12,22 @@
   color: var(--second-color);
 }
 
-// .footer-subs__form {
-//   display: flex;
-// }
+.footer-subs__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+}
 
 .footer-subs__btn {
   display: flex;
   padding: 10px 28px;
   position: relative;
-  // margin-left: 12px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   width: 200px;
   height: 50px;

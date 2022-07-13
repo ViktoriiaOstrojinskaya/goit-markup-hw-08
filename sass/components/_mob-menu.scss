@@ -1,0 +1,117 @@
+.mob-menu {
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+  
+.mob-menu__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      
+      justify-content: space-between;
+      overflow: auto;  
+      padding: 48px 40px;
+  
+      overflow: auto;
+  }
+  
+  
+.mob-menu__open-btn,
+.mob-menu__close-btn {
+    display: block;
+    margin-left: auto;
+    
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }     
+}
+  
+.mob-menu__close-btn {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+  
+.mob-menu__item {  
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+}
+  
+.mob-menu__link {
+    @include font(40px, 500, 1.17, 0.02em);
+    color: var(--main-color);
+   
+    transition: color 250ms var(--timing-function);
+  
+    &:hover,
+    &:focus {
+      color: var(--akcent-color);
+    }
+}
+  
+.mob-menu__link-active {
+    color: var(--akcent-color);
+}
+  
+.mob-menu__contact-list {
+    margin-bottom: 64px;
+}
+  
+.mob-menu__contact-item {
+    &:not(:last-child){
+      margin-bottom: 32px;
+    }
+}
+
+.mob-menu__contact-tel {
+    @include font(34px, 500, 1.17, 0.02em);
+    color: var(--akcent-color);
+}
+  
+.mob-menu__contact-mail {
+    @include font(24px, 500, 1.16, 0.02em);
+    color: var(--text-color);
+}
+  
+.mob-menu__icon {
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      fill: var(--akcent-color);
+    }
+}
+  
+.mob-menu__soc-list {
+    display: flex;  
+}
+
+.mob-menu__soc-item {
+    padding-right: 10px;
+  
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+    
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+  
+.mob-menu__soc-link  {
+    display: flex;
+    @include font(18px, 500, 1.22, 0.02em);
+    color:rgba(33, 150, 243, 1);
+    
+}
