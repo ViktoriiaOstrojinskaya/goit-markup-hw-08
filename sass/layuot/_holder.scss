@@ -20,7 +20,7 @@
     @include placing(center, center);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     @include placing(center, center);
   }  
