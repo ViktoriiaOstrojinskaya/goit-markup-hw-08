@@ -498,8 +498,8 @@ img {
 
 .backdrop {
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -641,12 +641,16 @@ img {
 }
 
 .check-text {
-  display: flex;
   flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.17;
   color: var(--text-color);
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .check-text {
+    display: flex;
+  }
 }
 @media screen and (min-width: 1200px) {
   .check-text {
@@ -1026,7 +1030,12 @@ img {
 
 .team__wrap {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__wrap {
+    padding-bottom: 30px;
+  }
 }
 
 .team__subtitle {
