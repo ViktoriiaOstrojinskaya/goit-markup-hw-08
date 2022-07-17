@@ -6,10 +6,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
-
-  padding: 93px 15px;
-
-  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);  
 }
 
 .backdrop.is-hidden .modal {
@@ -20,8 +17,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-
+  
   width: auto;
   height: auto;
   background: var(--btn-color);
@@ -33,7 +29,13 @@
   padding: 40px;
   transition: transform 250ms var(--timing-function);
 
+  @media screen and (max-width: 479px) {
+    transform: translate(-50%, -40%) scale(1);
+    overflow-y: scroll;
+  }
+  
   @media screen and (min-width: 480px) {
+    transform: translate(-50%, -50%) scale(1);
     width: 450px;
     height: 609px;
   }
@@ -183,8 +185,6 @@
 }  
 
 .check-text span {
- 
-  
   width: 16px;
   height: 15px;
   border: 1px solid rgba(0, 0, 0, 1);
@@ -241,3 +241,13 @@
     background-color: #188ce8;
   }
 }
+
+// .modal__field:focus-within .input,
+// .modal__field:hover .input {
+//   transition: border-color 250ms var(--timing-function);
+// }
+
+// .modal__field:focus-within .modal__icon,
+// .modal__field:hover .modal__icon {
+//   fill: var(--akcent-color);
+// }

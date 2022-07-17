@@ -6,6 +6,9 @@
     width: 100vw;
     height: 100vh;
     z-index: 2;
+
+    transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+    
   }
   
 .mob-menu__container {
@@ -17,6 +20,8 @@
       justify-content: space-between;
       overflow: auto;  
       padding: 48px 40px;
+
+      transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
   }
   
   
