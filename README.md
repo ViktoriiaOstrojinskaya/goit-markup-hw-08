@@ -1,2 +1,1 @@
-# goit-markup-hw-08
-homework_#8
+A website has been created with a responsive layout.
